@@ -19,17 +19,46 @@
 * 원격 저장소 추가(본인 깃허브 주소)<br>
 ``` git remote add origin https://github.com/julia-sj-kr/VoiceRecognitionApp.git```
 
-* 파일 추가<br>
-``` git add .```
+* 스테이지에 파일 올리기<br>
+  `git add .` 명령어는 현재 디렉토리의 모든 변경된 파일을 추가합니다.<br>
+  `git add MyFolder/` 명령어는 폴더를 지정하여 추가합니다. `MyFolder`는 폴더 이름이다.<br>
+  `git add <파일명>` 명령어는 파일을 지정하여 추가합니다.
 
-  git add . 명령어는 현재 디렉토리의 모든 변경된 파일을 추가합니다.
 
-* 커밋<br>
+* 커밋하기<br>
+  변경 사항을 커밋합니다. 커밋 메시지는 변경 내용에 대한 설명으로 설정할 수 있습니다.<br>
 ``` git commit -m "Initial commit"```
 
-* 푸시<br>
+* 원격 저장소에 푸시<br>
+  로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
 ``` git push -u origin master``` 
 
    git push -u origin master 에서 -u 옵션은 upstream 설정을 의미하며, 다음부터 git push만 사용해도 되도록 하는 설정입니다.<br>
    `master`는 사용하고 있는 브랜치 이름입니다.
+
+### :small_orange_diamond: 기존 깃허브 repository에 로컬에 있는 새로운 자료를 추가하는 프로세스<br>
+
+* 저장소 클론<br>
+  저장소를 로컬로 클론합니다. 터미널을 열고 다음 명령어를 입력하세요.<br>
+``` git clone https://github.com/julia-sj-kr/Network-communication.git```
+
+* 로컬 저장소로 이동<br>
+``` cd Network-communication```
+
+* 드래그 앤 드롭으로 새로운 자료 추가<br>
+  이제 로컬 디렉토리에 추가할 파일 또는 폴더를 넣습니다. 원하는 디렉토리에 복사하거나 이동하세요.
+
+* 스테이지에 파일 올리기<br>
+  `git add .` 명령어는 현재 디렉토리의 모든 변경된 파일을 추가합니다.<br>
+  `git add MyFolder/` 명령어는 폴더를 지정하여 추가합니다. `MyFolder`는 폴더 이름이다.<br>
+  `git add <파일명>` 명령어는 파일을 지정하여 추가합니다.
+
+* 커밋하기<br>
+  변경 사항을 커밋합니다. 커밋 메시지는 변경 내용에 대한 설명으로 설정할 수 있습니다.<br>
+``` git commit -m "Add new file"```
+
+* 원격 저장소에 푸시<br>
+  로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
+``` git push origin master``` 
+
 

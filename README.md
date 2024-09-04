@@ -82,6 +82,21 @@
   로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
 ``` git push origin master``` 
 
+### :small_orange_diamond: 원격 저장소에 이미 존재하는 변경 사항이 있을때 처리하는 프로세스<br>
+
+* 원격 변경 사항 가져오기<br>
+  먼저, 원격 저장소의 변경 사항을 로컬로 가져옵니다.<br>
+  `git pull origin master`<br>
+
+* 충돌 해결<br>
+  만약 `git pull` 중에 충돌이 발생한다면, 충돌을 해결해야 합니다. 충돌이 발생한 파일은 Git에서 표시됩니다.<br>
+  해당 파일을 열고 충돌된 부분을 수정한 후, 변경 사항을 추가하고 커밋합니다.<br>
+  `git add <수정한 파일>`<br>
+  `git commit -m "Resolve merge conflicts"`
+
+* 다시 푸시하기<br>
+  모든 충돌이 해결된 후, 다시 푸시 명령어를 실행합니다.<br>
+``` git push origin master``` 
 
 
 

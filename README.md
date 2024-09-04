@@ -22,11 +22,14 @@
 * 파일 추가<br>
 ``` git add .```
 
+  git add . 명령어는 현재 디렉토리의 모든 변경된 파일을 추가합니다.
+
 * 커밋<br>
 ``` git commit -m "Initial commit"```
 
 * 푸시<br>
 ``` git push -u origin master``` 
 
- git push -u origin master 에서 -u 옵션은 upstream 설정을 의미하며, 다음부터 git push만 사용해도 되도록 하는 설정입니다.<br>
+   git push -u origin master 에서 -u 옵션은 upstream 설정을 의미하며, 다음부터 git push만 사용해도 되도록 하는 설정입니다.<br>
+   `master`는 사용하고 있는 브랜치 이름입니다.
 

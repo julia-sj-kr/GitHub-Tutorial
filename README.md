@@ -89,6 +89,9 @@
   `git pull origin master`<br>
 
 * 충돌 해결<br>
+  > 예시 오류메시지:<br>
+  https://chatgpt.com/share/01dbcc33-c5f1-4612-90af-daf88bbc4179<br>
+  
   만약 `git pull` 중에 충돌이 발생한다면, 충돌을 해결해야 합니다. 충돌이 발생한 파일은 Git에서 표시됩니다.<br>
   해당 파일을 열고 충돌된 부분을 수정한 후, 변경 사항을 추가하고 커밋합니다.<br>
   `git add <수정한 파일>`<br>

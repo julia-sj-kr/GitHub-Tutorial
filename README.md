@@ -3,6 +3,7 @@
 초보자가 Git과 GitHub를 사용하여 디렉토리를 원격 저장소에 업로드하는 과정을 이해하기 쉽게 설명하였다.<br>
 명령 프롬프트의 코드를 정리하였으며 브랜치 병합과 같은 협동 기능은 생략하고 1인 개발자가 버전관리 용도로 쓰는것에 초점을 맞추었다.
 
+---
 ### :small_orange_diamond: 최초에 디렉토리 단위로 깃에 올리는 프로세스<br>
 추가로 업데이트할때는 해당하지 않음.
 
@@ -35,7 +36,7 @@
 
    git push -u origin master 에서 -u 옵션은 upstream 설정을 의미하며, 다음부터 git push만 사용해도 되도록 하는 설정입니다.<br>
    `master`는 사용하고 있는 브랜치 이름입니다.
-
+---
 ### :small_orange_diamond: 기존 깃허브 repository에 로컬에 있는 새로운 자료를 추가하는 프로세스<br>
 
 * 저장소 클론<br>
@@ -60,7 +61,7 @@
 * 원격 저장소에 푸시<br>
   로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
 ``` git push origin master``` 
-
+---
 ### :small_orange_diamond: 변경 사항을 원격 저장소(깃허브 repository)에 푸시하는 프로세스<br>
 
 * 변경 사항 확인하기<br>
@@ -81,7 +82,7 @@
 * 원격 저장소에 푸시<br>
   로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
 ``` git push origin master``` 
-
+---
 ### :small_orange_diamond: 원격 저장소에 이미 존재하는 변경 사항이 있을때 처리하는 프로세스<br>
 
 * 원격 변경 사항 가져오기<br>
@@ -101,6 +102,6 @@
   모든 충돌이 해결된 후, 다시 푸시 명령어를 실행합니다.<br>
 ``` git push origin master``` 
 
-
-이모지 모음: https://chatgpt.com/share/aa7321b5-d11d-420d-b471-55dcf5096941
+---
+📝 이모지 모음: https://chatgpt.com/share/aa7321b5-d11d-420d-b471-55dcf5096941
 

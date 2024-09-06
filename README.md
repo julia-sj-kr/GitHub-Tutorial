@@ -83,13 +83,25 @@
   로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
 ``` git push origin master``` 
 ---
-### :small_orange_diamond: 원격 저장소에 이미 존재하는 변경 사항이 있을때 처리하는 프로세스<br>
+### :small_orange_diamond: 원격 저장소에 로컬에 없는 변경 사항이 있을때 처리하는 프로세스<br>
 
-* 원격 변경 사항 가져오기<br>
+원격 저장소의 변경 사항을 먼저 가져와서 로컬과 동기화한 후, 다시 푸시하면 됩니다.
+소개하는 방법은 2가지이니 상황에 맞게 사용하세요.
+
+- **방법1. 재배치하기(rebase)**
+  -  원격 저장소의 변경 사항 가져오기<br>
+  변경 사항을 병합하는 대신, 내 로컬 변경 사항을 원격 변경 사항 위에 "재배치"하여 충돌을 최소화합니다.<br>
+  ```git pull origin master --rebase```
+
+  -  푸시하기<br>
+  ``` git push origin master``` 
+
+- **방법2. 병합하기**
+  -  원격 변경 사항 가져오기<br>
   먼저, 원격 저장소의 변경 사항을 로컬로 가져옵니다.<br>
   `git pull origin master`<br>
 
-* 충돌 해결<br>
+  -  충돌 해결<br>
   > 예시 오류메시지:<br>
   https://chatgpt.com/share/01dbcc33-c5f1-4612-90af-daf88bbc4179<br>
   
@@ -97,10 +109,10 @@
   해당 파일을 열고 충돌된 부분을 수정한 후, 변경 사항을 추가하고 커밋합니다.<br>
   `git add <수정한 파일>`<br>
   `git commit -m "Resolve merge conflicts"`
-
-* 다시 푸시하기<br>
+  
+  -  다시 푸시하기<br>
   모든 충돌이 해결된 후, 다시 푸시 명령어를 실행합니다.<br>
-``` git push origin master``` 
+  ``` git push origin master``` 
 
 ---
 📝 이모지 모음: https://chatgpt.com/share/aa7321b5-d11d-420d-b471-55dcf5096941

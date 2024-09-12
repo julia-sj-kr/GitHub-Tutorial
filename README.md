@@ -77,7 +77,7 @@
 
 * 커밋하기<br>
   변경 사항을 커밋합니다. 커밋 메시지는 변경 내용에 대한 설명으로 설정할 수 있습니다.<br>
-``` git commit -m "Fix: update MainActivity to improve UI"```
+  ``` git commit -m "Fix: update MainActivity to improve UI"```
 
 * 원격 저장소에 푸시<br>
   로컬 변경 사항을 원격 GitHub 저장소에 푸시합니다.<br>
@@ -89,6 +89,13 @@
 소개하는 방법은 2가지이니 상황에 맞게 사용하세요.
 
 - **방법1. 재배치하기(rebase)**
+  - 변경 사항 스테이징 하기<br>
+  `git add .` 명령어는 현재 디렉토리의 모든 변경된 파일을 추가합니다.<br>
+  
+  * 커밋하기<br>
+  변경 사항을 커밋합니다. 커밋 메시지는 변경 내용에 대한 설명으로 설정할 수 있습니다.<br>
+  ``` git commit -m "Fix: update MainActivity to improve UI"```
+
   -  원격 저장소의 변경 사항 가져오기<br>
   변경 사항을 병합하는 대신, 내 로컬 변경 사항을 원격 변경 사항 위에 "재배치"하여 충돌을 최소화합니다.<br>
   ```git pull origin master --rebase```

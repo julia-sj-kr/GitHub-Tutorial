@@ -101,7 +101,14 @@
   ```git pull origin master --rebase```
 
   -  푸시하기<br>
-  ``` git push origin master``` 
+  ``` git push origin master--force```
+
+  - 확인 후 푸쉬하기<br>
+  ```git push origin master --force-with-lease```
+
+>force는 강제로 푸시하는 옵션입니다. 리베이스를 한 후에는 원격 저장소와 로컬 저장소의 커밋 히스토리가 일치하지 않을 수 있습니다. 이 경우 기본적인 git push는 거부되기 때문에 --force 옵션을 사용하여 강제로 로컬의 커밋을 원격에 덮어씌우게 됩니다.
+
+>만약 협업 프로젝트에서 --force 사용이 위험할 경우, --force-with-lease 옵션을 사용할 수도 있습니다. 이 옵션은 원격 저장소가 예상치 못한 추가 변경이 있는지 확인한 후 푸시를 진행합니다.
 
 - **방법2. 병합하기**
   -  원격 변경 사항 가져오기<br>

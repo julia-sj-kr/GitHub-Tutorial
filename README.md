@@ -136,6 +136,19 @@
 git fetch origin
 git reset --hard origin/master
 ```
+
+---
+### :small_orange_diamond: 브랜치 확인 및 변경<br>
+
+- 현재 브랜치 확인  
+```
+git branch
+```
+- 브랜치 이름 변경  
+  만약 main 브랜치가 없고, master 브랜치가 존재한다면, master 브랜치를 main으로 변경하거나, 그냥 master 브랜치를 원격으로 푸시할 수 있습니다.  
+```
+git branch -m master main
+```
 ---
 📝 이모지 모음: https://chatgpt.com/share/aa7321b5-d11d-420d-b471-55dcf5096941
 
